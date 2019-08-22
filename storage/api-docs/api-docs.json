@@ -1,0 +1,273 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "API .:: MERQUEO ::. ",
+        "description": "Descripci\u00f3n de recursos disponibles en el API",
+        "contact": {
+            "email": "jesus950810@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "host": "localhost",
+    "basePath": "/api/v1",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/order/load": {
+            "post": {
+                "tags": [
+                    "3. Orders"
+                ],
+                "summary": "Cargar pedidos al sistema",
+                "responses": {
+                    "200": {
+                        "description": "Generar cargue correcto de pedidos."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/order/all": {
+            "get": {
+                "tags": [
+                    "3. Orders"
+                ],
+                "summary": "Mostrar listado completo de productos",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los productos."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/product/load": {
+            "post": {
+                "tags": [
+                    "1. Products"
+                ],
+                "summary": "Cargar productos al inventario",
+                "responses": {
+                    "200": {
+                        "description": "Generar cargue correcto de los productos."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/product/all": {
+            "get": {
+                "tags": [
+                    "1. Products"
+                ],
+                "summary": "Mostrar listado completo de productos en el inventario",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los productos."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/product/{id}": {
+            "get": {
+                "tags": [
+                    "1. Products"
+                ],
+                "summary": "Mostrar datos de un producto especifico",
+                "operationId": "find",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "identificador del producto",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successfull"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/provider/load": {
+            "post": {
+                "tags": [
+                    "2. Providers"
+                ],
+                "summary": "Cargar proveedores al sistema",
+                "responses": {
+                    "200": {
+                        "description": "Generar cargue correcto de los proveedores."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/provider/all": {
+            "get": {
+                "tags": [
+                    "2. Providers"
+                ],
+                "summary": "Mostrar listado completo de proveedores en el sistema",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los proveedores registrados."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/provider/{id}": {
+            "get": {
+                "tags": [
+                    "2. Providers"
+                ],
+                "summary": "Mostrar datos de un provedor especifico",
+                "operationId": "find",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "identificador del proveedor",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successfull"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/report/A": {
+            "get": {
+                "tags": [
+                    "4. Reports"
+                ],
+                "summary": "Productos y qu\u00e9 cantidad puede ser alistada desde inventario",
+                "responses": {
+                    "200": {
+                        "description": "1er Informe solicitado"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/report/B": {
+            "get": {
+                "tags": [
+                    "4. Reports"
+                ],
+                "summary": "Productos que deben ser alistados por transportadores, y a qu\u00e9 transportador le corresponde cada pedido",
+                "responses": {
+                    "200": {
+                        "description": "2do Informe solicitado"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/report/C": {
+            "get": {
+                "tags": [
+                    "4. Reports"
+                ],
+                "summary": "Productos menos vendidos el d\u00eda 1 de marzo",
+                "responses": {
+                    "200": {
+                        "description": "2do Informe solicitado"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/report/D": {
+            "get": {
+                "tags": [
+                    "4. Reports"
+                ],
+                "summary": "Dado el Id de un pedido, ver que producos y que cantidad pueden ser alistados segun inventario y cuales abastecidos por proveedores",
+                "parameters": [
+                    {
+                        "name": "idOrden",
+                        "in": "query",
+                        "description": "Identificador de la orden",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "2do Informe solicitado"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/report/E": {
+            "get": {
+                "tags": [
+                    "4. Reports"
+                ],
+                "summary": "Calcular el inventario del d\u00eda 2 de marzo, teniendo en cuenta los pedidos despachados el 1 de marzo",
+                "responses": {
+                    "200": {
+                        "description": "2do Informe solicitado"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/report/F": {
+            "get": {
+                "tags": [
+                    "4. Reports"
+                ],
+                "summary": "Productos m\u00e1s vendidos el d\u00eda 1 de marzo",
+                "responses": {
+                    "200": {
+                        "description": "2do Informe solicitado"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}

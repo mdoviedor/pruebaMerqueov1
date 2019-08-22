@@ -1,0 +1,139 @@
+{
+    "providers": [
+        {
+            "id": 1,
+            "name": "Ruby",
+            "products": [
+                {
+                    "productId": 1
+                },
+                {
+                    "productId": 2
+                },
+                {
+                    "productId": 45
+                },
+                {
+                    "productId": 3
+                },
+                {
+                    "productId": 4
+                },
+                {
+                    "productId": 5
+                },
+                {
+                    "productId": 46
+                },
+                {
+                    "productId": 24
+                },
+                {
+                    "productId": 25
+                },
+                {
+                    "productId": 26
+                },
+                {
+                    "productId": 27
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Raul",
+            "products": [
+                {
+                    "productId": 28
+                },
+                {
+                    "productId": 47
+                },
+                {
+                    "productId": 29
+                },
+                {
+                    "productId": 30
+                },
+                {
+                    "productId": 31
+                },
+                {
+                    "productId": 32
+                },
+                {
+                    "productId": 33
+                },
+                {
+                    "productId": 34
+                },
+                {
+                    "productId": 35
+                },
+                {
+                    "productId": 36
+                },
+                {
+                    "productId": 16
+                },
+                {
+                    "productId": 17
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Angelica",
+            "products": [
+                {
+                    "productId": 6
+                },
+                {
+                    "productId": 7
+                },
+                {
+                    "productId": 8
+                },
+                {
+                    "productId": 9
+                },
+                {
+                    "productId": 10
+                },
+                {
+                    "productId": 11
+                },
+                {
+                    "productId": 12
+                },
+                {
+                    "productId": 13
+                },
+                {
+                    "productId": 14
+                },
+                {
+                    "productId": 15
+                },
+                {
+                    "productId": 18
+                },
+                {
+                    "productId": 19
+                },
+                {
+                    "productId": 20
+                },
+                {
+                    "productId": 21
+                },
+                {
+                    "productId": 22
+                },
+                {
+                    "productId": 23
+                }
+            ]
+        }
+    ]
+}
