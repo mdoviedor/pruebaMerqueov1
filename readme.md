@@ -1,7 +1,13 @@
+##Autor Prueba:
+<b>Jesús Enrique Jimenez</b><br>
+Ingeniero de Sistemas<br>
+tel: 3058143543
+ 
+
 ## Especificaciones
 
 Se realiza implementacion de patrón mvc para realizar un desacople de capas de la siguiente forma:
-- <b>Capa Logica</b>
+- 
         la cual se compone de los controladores diseñados para los diferentes recursos generados en la API 
         (Productos, Proveedores, Ordenes, Reportes).
         En esta capa se desarrollo la logica necesaria para realizar validaciones y cargues correctos de las fuentes proporcionadas por cada uno de los componentes ya mecionados al sistema
