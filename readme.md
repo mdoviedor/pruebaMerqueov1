@@ -55,7 +55,7 @@ routes
 
 ********************************************************************************************
 PostData:
- Solo se tienen en cuenta los archivos necesarios en la estructura, ya que 
+ Solo se tienen en cuenta los archivos necesarios en la estructura, ya que el framework empleado dispone de muchos archivos
 ********************************************************************************************
 
 ```
